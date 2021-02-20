@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+}
+
+
+/*images */
+#img-title {
+    width: 100%;
+}
+
+.img-info {
+    margin: 0 auto 0;
+    width: 50%;
+}
+
+/* sections */
+#introduction,
+#ingredients {
+    border-bottom: 2px solid #b3b3b3;
+}
