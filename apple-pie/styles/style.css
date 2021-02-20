@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    background:url("../images/apple-pie.jpg") center no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* header img {
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+  margin: 0;
+  background-position: center;
+} */
+
+
+header h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
