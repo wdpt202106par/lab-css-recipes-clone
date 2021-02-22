@@ -1,7 +1,13 @@
-body {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+* {
+    font-family: Roboto;
 }
-
+body {
+    margin: 0 30px 0 30px;
+}
+h1{
+    font-size: 5em;
+}
 header {
     height: 100vh;
     position: relative;
@@ -9,6 +15,7 @@ header {
     background-size: cover;
     margin-top: 0;
     margin-bottom: 0;
+    margin: 0px;
 }
 
 /* header img {
@@ -28,7 +35,74 @@ header h1 {
     transform: translate(-50%,-50%);
 }
 
-div  {
+div {
     text-align: center;
-    background-color: blue;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+div p {
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+ }
+ div img{
+     width: 40%;
+     margin-bottom: 20px;
+ }
+.border {
+    margin-bottom: 20px;
+    padding: 0.5px;
+    background-color: grey;
+}
+.part-2 {
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h2 {
+    text-align: left;
+    font-weight: normal
+    ;
+
+}
+.part-2 ul {
+    text-align: left;
+    text-decoration: none;
+    list-style: none !important;
+    margin-bottom: 50px;
+    margin-left: -30px;
+    
+}
+.part-2 li:before {
+    content: "– " !important;
+}
+
+.part-2 img {
+    width: 40%;
+    background-color: black;
+    margin-bottom: 20px;
+
+  }  
+
+  .part-3 {
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+
+}
+.part-3 ol { 
+    counter-reset: item;
+    list-style-type: none;
+    margin-left: -30px;
+    margin-bottom: 40px;
+}
+.part-3 li { 
+    display: block; 
+}
+.part-3 li:before { 
+    content: counter(item) ") "; 
+    counter-increment: item;
 }
