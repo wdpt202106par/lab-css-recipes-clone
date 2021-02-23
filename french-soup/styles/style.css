@@ -1,9 +1,87 @@
 /*Some necessary adjustments*/
-h1, body, html, main {
+h1,
+body,
+html,
+main {
   margin: 0;
 }
 /*Import the font and set the default size*/
 html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+body,
+div,
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  height: 58rem;
+  margin: 0;
+  background-image: url("../images/soup.jpg");
+  background-size: cover;
+  color: white;
+  font-size: 2rem;
+}
+header > h1 {
+  align-items: center;
+}
+div {
+  margin: 0 10rem 0 10rem;
+  padding: 2rem 0 0 0;
+  align-items: center;
+}
+div:not(:last-of-type) {
+  border-bottom: 3px solid grey;
+}
+#ingredients-info {
+  align-items: flex-start;
+}
+
+h2 {
+  float: left;
+}
+h1 {
+  text-align: center;
+}
+img {
+  margin-bottom: 2rem;
+}
+#recipe-picture {
+  height: 3rem;
+  width: 20rem;
+}
+#ingredient-picture {
+  height: 4rem;
+  width: 20rem;
+  align-self: center;
+}
+ul {
+  list-style-type: "- ";
+  margin-left: 0;
+}
+ol {
+  counter-reset: item;
+  list-style-type: none;
+  margin: 0 0 0 3rem;
+}
+ol > li {
+  position: relative;
+}
+ol > li > p {
+  margin: 0;
+}
+ol > li:before {
+  counter-increment: item;
+  content: counter(item) ") ";
+  position: absolute;
+  left: -1.4rem;
+}
+#cooking-info > h2 {
+  align-self: flex-start;
+}
+footer {
+  margin-top: 3rem;
 }
