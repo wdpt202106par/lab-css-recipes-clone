@@ -1,24 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    font-family: roboto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    line-height: 3.5em;
 }
 
+/* -------------------------------------- */
+/* header and headlines */
+/* -------------------------------------- */
 
-/*images */
-#img-title {
+header {
+    background: url("../images/apple-pie.jpg"); 
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 42rem;
     width: 100%;
+    margin-bottom: 6em;
 }
 
-.img-info {
-    margin: 0 auto 0;
-    width: 50%;
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 8em;
+    font-weight: normal;
+    position: relative;
+    display: block;
+    top: 48%;
 }
 
+h2 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* -------------------------------------- */
 /* sections */
+/* -------------------------------------- */
+section {
+    width: 80%;
+    margin: 3em auto;
+}
+
 #introduction,
 #ingredients {
     border-bottom: 2px solid #b3b3b3;
+}
+
+/* -------------------------------------- */
+/* images */
+/* -------------------------------------- */
+.img-container {
+    text-align: center;
+    margin: 2em auto;
+}
+
+.img-container img {
+    width: 35%;
+}
+
+/* -------------------------------------- */
+/* section introduction */
+/* -------------------------------------- */
+
+#introduction {
+    text-align: center;
+}
+
+
+#introduction p {
+    text-align: center;
+    /* margin: 0 auto; */
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+/* -------------------------------------- */
+/* section ingredients and directions */
+/* -------------------------------------- */
+.ingredient-list {
+    font-size: 1.6em;
+    list-style: none;
+    padding-left: 2em;   
+}
+
+.ingredient-list li,
+.directions-list li {
+    line-height: 1.8em;
+}
+
+/* using dashes for the unordered list */
+.ingredient-list li::before {
+    content: "-";
+    position: absolute;
+    margin-left: -1em;
+
+}
+
+.directions-list {
+    font-size: 1.6em;
+    list-style-position: inside;
+    padding-left: 1.2em;
+    list-style: none;
+    counter-reset: orderedList;
+}
+
+/* adding brackets to the ordered list numbers */
+.directions-list li::before {
+    content: counter(orderedList) ") ";
+    counter-increment: orderedList;
 }
